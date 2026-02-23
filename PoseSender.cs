@@ -3,6 +3,8 @@ using UnityEngine.Networking;
 using System.Collections;
 using System.Text;
 
+# need to throttle this to avoid spamming the server with too many requests, maybe 30 hertz 
+
 public class PoseSender : MonoBehaviour
 {
     public string edgeUrl = "http://localhost:8000/pose";
